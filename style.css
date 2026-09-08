@@ -1,23 +1,44 @@
 body {
-            background-color: #f0f8ff;
-            font-family: Georgia, serif;
-            color: #333;
-            margin: 20px;
-            padding: 20px;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 40% 60%;
-        }
-        .uselessbtn {
-            background-color: #356137;
-            color: #f0f8ff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .uselessbtn:hover {
-            background-color: #293329;
-            cursor: pointer;
-        }
+    background-color: #f0fff6;
+    font-family: Georgia, serif;
+    color: #333;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Header styles */
+#header ul{
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#header li a:hover {
+    background-color: #111;
+}
+
+/* Main content styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.uselessbtn {
+    background-color: #356137;
+    color: #f0f8ff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.uselessbtn:hover {
+    background-color: #293329;
+    cursor: pointer;
+}
