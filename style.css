@@ -27,7 +27,8 @@ body {
 /* Main content styles */
 .grid-container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
 }
 .uselessbtn {
     background-color: #356137;
