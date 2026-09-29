@@ -2,7 +2,7 @@ body {
     background-color: #f0fff6;
     font-family: Georgia, serif;
     color: #333;
-    padding: 20px;
+    margin: 20px;
 }
 
 /* Header styles */
@@ -15,9 +15,11 @@ body {
 }
 #header li a {
     display: block;
+    font-family: 'Trebuchet MS', sans-serif;
     color: #333;
     text-align: center;
-    padding: 20px 40px;
+    padding: 0;
+    margin: 0;
     text-decoration: none;
 }
 #header li a:hover {
@@ -30,6 +32,8 @@ body {
     grid-template-columns: 1fr 2fr;
     grid-gap: 50px;
 }
+
+/* Button styles */ 
 .uselessbtn {
     background-color: #356137;
     color: #f0f8ff;
