@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interactive Page</title>
+	<link rel="stylesheet" href="interactive.css">
+</head>
+
+<body>
+    <header>
+        <h1>Uncover all 10 tiles to paint a beautiful sunset!s</h1>
+    </header>
+
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+        <div class="nine">9</div>
+        <div class="ten">10</div>
+    </div>
+
+    <footer>
+        <a href="index.html">Go Back to Main Page.</a>
+    </footer>
+
+    <script>
+        document.querySelector(".container").addEventListener("click", (event) => {
+            if (event.target.matches(".container > div")) {
+                event.target.classList.add("clicked");
+            }
+        });
+    </script>
+
+</body>

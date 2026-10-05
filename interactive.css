@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	padding: 2rem;
+	font: 16px Georgia, serif;
+	color: #222;
+	background-color: #f0fff6;
+}
+
+header {
+	margin: 0;
+	padding: 0 0 2rem 0;
+	text-align: left;
+}
+
+footer {
+	margin: 0;
+	padding: 2rem 0 0 0;
+	text-align: left;
+}
+
+h1 {
+	margin: 0;
+	font-size: inherit;
+	font-weight: normal;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.container > div {
+  border: 2px solid #f0fff6;
+  border-radius: 5px;
+  background-color: #f0fff6;
+  padding: 1em;
+  color: #f0fff6;;
+  cursor: pointer;
+}
+
+.container > div.clicked {
+  background-color: #c3e3ee;
+  border-color: #648ea1;
+  color: #5d93ac;
+}
+
+.container > div.one.clicked {
+  background-color: #fff7e7;
+  border-color: #c5b9a3;
+  color: #bbac8f;
+}
+
+.container > div.four.clicked {
+  background-color: #fff7e7;
+  border-color: #c5b9a3;
+  color: #bbac8f;
+}
+
+.container > div.seven.clicked {
+  background-color: #ffcc80;
+  border-color: orange;
+  color: orange;
+}
+
+.container > div.nine.clicked {
+  background-color: #fff3ad;
+  border-color: #bdb37f;
+  color: #babb8c;
+}
+
+.container > div.ten.clicked {
+  background-color: #ddc991;
+  border-color: #9e8c64;
+  color: #928a5f;
+}
+
+.one {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.two {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+}
+
+.three {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.four {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.five {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+.six {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+}
+
+.seven {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.eight {
+    grid-column: 3 / 5;
+    grid-row: 4 / 5;
+}
+
+.nine {
+    grid-column: 1 / 5;
+    grid-row: 5 / 6;
+}
+
+.ten {
+    grid-column: 1 / 5;
+    grid-row: 6 / 7;
+}
+
+footer a {
+	display: block;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
