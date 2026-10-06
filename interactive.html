@@ -9,7 +9,7 @@
 
 <body>
     <header>
-        <h1>Uncover all 10 tiles to paint a beautiful sunset!s</h1>
+        <h1>Uncover all <span style="font-weight: bold;">10 tiles</span> to paint a beautiful <span style="font-weight: bold;">sunset!</span></h1>
     </header>
 
     <div class="container">
@@ -26,6 +26,23 @@
     </div>
 
     <footer>
+        <p>This page was made with css grid layout. I was able to set all grid boxes inside a container. The interactive element was achieved by query, event listener, and 'clicked' event that I asked chatGPT to help me with. The script is as follows:</p>
+        <pre style="margin-top: 2rem;">
+            document.querySelector(".container").addEventListener("click", (event) => {
+                if (event.target.matches(".container > div")) {
+                    event.target.classList.add("clicked");
+                }
+            });
+        </pre>
+        <p>When a user clicks on a grid box, the 'clicked' class is added to that box, which changes its background color to reveal the sunset image.</p>
+        <pre style="margin-top: 2rem;">
+            .container > div.seven.clicked {
+                background-color: #ffcc80;
+                border-color: orange;
+                color: orange;
+            }
+        </pre>
+        <p>When all 10 boxes are clicked, the sunset image is fully revealed. Refresh the page to play again.</p>
         <a href="index.html">Go Back to Main Page.</a>
     </footer>
 
